@@ -34,6 +34,15 @@ function areaTriangulo(base, altura){
 }
 //console.log("El area del triangulo es: " + areaTriangulo + "cm^2");
 
+function alturaIsosceles(lado1, lado2, base){
+    if(lado1 == lado2 && lado1 != base){
+        return(Math.sqrt((lado1**2)-((base**2)/4)));
+    }
+    else{
+        return "No es un triangulo isosceles";
+    }
+}
+
 console.groupEnd();
 
 // Codigo del circulo
@@ -101,6 +110,20 @@ function calcularAreaTriangulo(){
 
     const Area = areaTriangulo(value1, value2);
     alert (Area);
+}
+
+function calcularAlturaTriangulo1(){
+    const input1 = document.getElementById("Input1Triangulo1");
+    const value1 = input1.value;
+
+    const input2 = document.getElementById("Input2Triangulo1");
+    const value2 = input2.value;
+
+    const input3 = document.getElementById("Input3Triangulo1");
+    const value3 = input3.value;
+
+    const altura = alturaIsosceles(value1, value2, value3);
+    alert (altura);
 }
 
 function calcularDiametroCirculo(){
