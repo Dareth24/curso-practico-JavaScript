@@ -1,0 +1,14 @@
+html, body{
+    min-height: 100%;
+}
+body{
+    display: grid;
+    justify-content: center;
+}
+header{
+    display: grid;
+    justify-content: center;
+}
+form{
+    display: grid;
+}
