@@ -1,0 +1,28 @@
+.lista li{
+    padding: auto;
+    list-style: none;
+}
+.lista li a{
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.lista li a:hover{
+    color: aqua;
+    background-color: orangered;
+}
+
+.lista li ul{
+    display: none;
+    position: absolute;
+}
+
+.lista li:hover >ul{
+    display: block;
+}
+
+#result2{
+    display: none;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reto_final.css">
+    <title>Calcula tu capacidad de endeudamiento</title>
+</head>
+<body>
+    <header>
+    <h1>Calcula tu capacidad de endeudamiento</h1>
+    </header>
+    <section>
+        <label for="InputIngresos">
+            Escribe cuales son tus ingresos mensuales:
+        </label>
+        <input id="InputIngresos" type="number">
+
+        <label for="InputGastos">
+            Escribe cuales son tus gastos mensuales:
+        </label>
+        <input id="InputGastos" type="number">
+
+
+        <nav>
+            <ul class="lista">
+                <li><a>Selecciona el porcentaje de ingresos</a>
+                <ul>
+                    <li><button type="button" onclick="ingresos_split1()">
+                        10%</button>
+                    </li>
+                    <li><button type="button" onclick="ingresos_split2()">
+                        20%</button></li>
+                    <li><button type="button" onclick="ingresos_split3()">
+                        30%</button></li>
+                    <li><button type="button" onclick="ingresos_split4()">
+                        40%(max)</button></li>
+                </ul></li>
+                
+        </nav>
+
+        <button type="button" onclick="calcular_cap_deuda()">
+            Calcular tu capacidad de endeudamiento
+        </button>
+
+        <p id="result"></p>
+
+    </section>
+    <script src="./reto_final.js"></script>
+</body>
+</html>
