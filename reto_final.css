@@ -1,22 +1,74 @@
+html body{
+    padding:15px 15px;
+    min-height: 100%;
+    background-color: hsl(132, 20%, 95%);
+    font-family: 'Gentium Book Plus', serif;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: solid gainsboro;
+    border-radius: 10px;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hwb(22 96% 0%);
+    border: solid #ffe0a7;
+    padding: 0 10px;
+}
+
+section{
+    display: grid;
+    width: auto;
+    margin: auto;
+    justify-content: left;
+}
+
+#InputIngresos{
+    font-size: medium;
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: palegoldenrod;
+    border: solid gray;
+    border-width: 2px;
+}
+
+#InputGastos{
+    font-size: medium;
+    width: 50%;
+    height: 25px;
+    border-radius: 5px;
+    background-color: palegoldenrod;
+    border: solid gray;
+    border-width: 2px;
+}
+
+nav{
+    display: flex;
+    height: 150px;
+}
+
 .lista li{
     padding: auto;
     list-style: none;
 }
+
 .lista li a{
-    color: black;
-    background-color: aqua;
-    text-decoration: none;
-    padding: 10px 15px;
+    font-size: medium;
 }
 
 .lista li a:hover{
-    color: aqua;
-    background-color: orangered;
+    color: grey;
 }
 
 .lista li ul{
     display: none;
     position: absolute;
+    padding-bottom: 0;
+    padding: 5px 0;
 }
 
 .lista li:hover >ul{
@@ -25,4 +77,46 @@
 
 #result2{
     display: none;
+}
+
+.boton_cal{
+    font-size: medium;
+    font-weight: bold;
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    background-color: floralwhite;
+    border: solid wheat 2px;
+}
+.boton_cal:hover{
+    background-color: hsl(64, 45%, 71%);
+}
+
+.lista button{
+    margin-left:0;
+    font-size: medium;
+    font-weight: bold;
+    height: auto;
+    border: solid gray 2px;
+    border-radius: 5px;
+}
+
+.lista button:hover{
+    background-color: #ffd077f1;
+}
+
+.lista{
+    margin: 15px 0 50px 0;
+}
+
+label{
+    padding: 20px 0 0 0;
+}
+
+input{
+    padding: 5px 0 5px 0;
+}
+
+ul.lista{
+    padding: 0;
 }

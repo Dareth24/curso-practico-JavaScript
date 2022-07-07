@@ -38,10 +38,10 @@ function calcular_cap_deuda(){
     const result = document.getElementById("result")
 
     if (cuota === 0){
-        result.innerText = "selecciona el porcentaje de tu ingreso que quieres destinar a la deuda";  
+        result.innerText = "Selecciona el porcentaje de tu ingreso que quieres destinar a la deuda";  
     } else if (cuota > 0){
-        result.innerText = "tu capacidad de endeudamiento mensual es " + cuota;
+        result.innerText = "Tu capacidad de endeudamiento mensual es " + cuota;
     } else {
-        result.innerText = "lo sieto, no tienes capacidad de endeudamiento";
+        result.innerText = "Lo sieto, no tienes capacidad de endeudamiento";
     }
 }    

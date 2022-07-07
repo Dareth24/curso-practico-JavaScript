@@ -5,20 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./reto_final.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@400;700&display=swap" rel="stylesheet">
     <title>Calcula tu capacidad de endeudamiento</title>
 </head>
 <body>
     <header>
-    <h1>Calcula tu capacidad de endeudamiento</h1>
-    </header>
+        <h1>Calcula tu Capacidad de Endeudamiento</h1>
+    </header>        
     <section>
         <label for="InputIngresos">
-            Escribe cuales son tus ingresos mensuales:
+            Escribe tus ingresos mensuales:
         </label>
         <input id="InputIngresos" type="number">
 
         <label for="InputGastos">
-            Escribe cuales son tus gastos mensuales:
+            Escribe tus gastos mensuales:
         </label>
         <input id="InputGastos" type="number">
 
@@ -35,12 +38,12 @@
                     <li><button type="button" onclick="ingresos_split3()">
                         30%</button></li>
                     <li><button type="button" onclick="ingresos_split4()">
-                        40%(max)</button></li>
+                        40%</button></li>
                 </ul></li>
                 
         </nav>
 
-        <button type="button" onclick="calcular_cap_deuda()">
+        <button class="boton_cal" type="button" onclick="calcular_cap_deuda()">
             Calcular tu capacidad de endeudamiento
         </button>
 
